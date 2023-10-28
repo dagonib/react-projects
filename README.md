@@ -1,5 +1,5 @@
 # react-projects
-Collection of React projects meticulously crafted to serve as compelling demonstrations of our capabilities.
+Collection of React projects meticulously crafted to serve as compelling demonstrations of my capabilities.
 
 | Project | Code | Web | Description | 
 |-|-|-|-|
