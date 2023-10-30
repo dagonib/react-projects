@@ -1,0 +1,45 @@
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: white;
+    padding: 1rem;
+}
+
+.input_filter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input_filter--price div {
+    display: flex;
+    gap: 0.5rem
+}
+
+select {
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width: 577px) {
+    .filters {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+  
+}
+
+@media only screen and (max-width: 410px) {
+    .input_filter--price {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
