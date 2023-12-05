@@ -3,6 +3,7 @@ Collection of React projects meticulously crafted to serve as compelling demonst
 
 | Project | Code | Web | Description | 
 |-|-|-|-|
+| Restaurant UI/UX | [Check](https://github.com/dagonib/react-projects/tree/main/restaurant-uiux) | [Visit](https://654a000be9e40874170ce987--shimmering-bubblegum-cf68c6.netlify.app) |  Creation of modern and responsive web applications for a restaurant with React JS from JavaScript Mastery Youtube Channel. |
 | Modern UI/UX | [Check](https://github.com/dagonib/react-projects/tree/main/modern-uiux) | [Visit](https://654400002a6dde54a015ad6f--chic-zabaione-cd1d04.netlify.app) |  Creation of modern and responsive web applications with React JS from JavaScript Mastery Youtube Channel. |
 | Shopping Cart | [Check](https://github.com/dagonib/react-projects/tree/main/curso-midudev/shopping-cart) | [Visit](https://653f8607779d1a5a77281c0f--strong-rugelach-6914aa.netlify.app/) | This project showcases the creation of a shopping cart using React. It makes use of the useContext hook to create a global state for managing the cart's contents. Additionally, complex state management is handled through the useReducer hook, and the useId hook is employed effectively. |
 | Movie Search | [Check](https://github.com/dagonib/react-projects/tree/main/curso-midudev/movie-search) | [Visit](https://653ce709b4c3ec73da263333--resilient-alpaca-380722.netlify.app/) | This React-based Movie Search app allows users to search for movies through the OMDb API. It provides real-time input validation and the ability to sort results alphabetically. |
