@@ -25,6 +25,6 @@ dist-ssr
 
 **/node_modules
 **/dist
-
+**/.env
 # Proyectos descartados
 router
