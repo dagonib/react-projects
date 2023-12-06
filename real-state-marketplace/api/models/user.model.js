@@ -15,7 +15,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-   
+    avatar: {
+        type: String,
+        default: 'https://res.cloudinary.com/dqtp9um6k/image/upload/v1629121252/real-estate-marketplace/default-avatar.png',
+    },
 }, { timestamps: true });
 
 const User = mongoose.model('User', userSchema);
