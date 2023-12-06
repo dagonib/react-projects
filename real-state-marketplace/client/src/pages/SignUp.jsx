@@ -1,17 +1,18 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { useFormData } from '../hooks/useFormData.js'
-import { useFormHandling } from '../hooks/useFormHandling.js'
+import { useState } from 'react'
 
 export default function SignUp() {
   const { formData, handleChange } = useFormData()
-  const { error, loading, handleAsyncFunction, setErrorHandler } = useFormHandling()
+  const [error, setError] = useState(null)
+  const [loading, setLoading] = useState(false)
 
   const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      await handleAsyncFunction(async () => {
+        setLoading(true)
         const res = await fetch('/api/auth/signup', {
           method: 'POST',
           headers: {
@@ -23,12 +24,16 @@ export default function SignUp() {
         const data = await res.json();
         
         if (data.success === false) {
-          throw new Error('An error occurred')
+          setLoading(false)
+          setError(data.message)
+          return
         }
+        setLoading(false)
+        setError(null)
         navigate('/sign-in')
-      })
-    } catch (catchedError) {
-      setErrorHandler('An error occurred')
+    } catch (error) {
+      setLoading(false)
+      setError(error.message)
     }
   }
 
