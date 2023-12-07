@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
     },
     avatar: {
         type: String,
-        default: 'https://res.cloudinary.com/dqtp9um6k/image/upload/v1629121252/real-estate-marketplace/default-avatar.png',
+        default: 'https://res.cloudinary.com/demo/image/twitter/1330457336.jpg',
     },
 }, { timestamps: true });
 
