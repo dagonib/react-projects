@@ -12,5 +12,9 @@ export function useFormData() {
         )
     }
 
-    return { formData, handleChange }
+    const handleUploadComplete = (downloadURL) => {
+        setFormData({...formData, avatar: downloadURL })
+    }
+
+    return { formData, handleChange, handleUploadComplete }
 }
