@@ -58,7 +58,7 @@ export const google = async (req, res, next) => {
                 id: user._id
             }, process.env.JWT_SECRET);
 
-            const { password, ...rest } = user._doc;
+            const { password: pass, ...rest } = user._doc;
 
             return res
                 .cookie('access_token', token, { httpOnly: true})
@@ -82,10 +82,10 @@ export const google = async (req, res, next) => {
                 id: newUser._id
             }, process.env.JWT_SECRET);
 
-            const { password, ...rest } = newUser._doc;
+            const { password: pass, ...rest } = newUser._doc;
 
             return res
-                .cookie('access_token', token, { httpOnly: true})
+                .cookie('access_token', token, { httpOnly: true })
                 .status(200)
                 .json(rest)
         }
